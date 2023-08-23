@@ -5,12 +5,23 @@ import DashboardIcon from "../../assets/icons/av_timer.svg";
 import Group from "../../assets/icons/group.svg";
 import Logo from "../../assets/icons/logo.svg";
 import SubjectIcon from "../../assets/icons/openbook.svg";
-import ParentsIcon from "../../assets/icons/parentssidenav.svg";
+import ParentIcon from "../../assets/icons/parentssidenav.svg";
 import SettingsIcon from "../../assets/icons/settings.svg";
-import StudentsIcon from "../../assets/icons/students2.svg";
-import TeachersIcon from "../../assets/icons/teachersidenav.svg";
+import StudentIcon from "../../assets/icons/students2.svg";
+import TeacherIcon from "../../assets/icons/teachersidenav.svg";
+import EarningsIcon from "../../assets/icons/contentHeader/earnings.svg";
+import ParentsIcon from "../../assets/icons/contentHeader/parents.svg";
+import StudentsIcon from "../../assets/icons/contentHeader/students.svg";
+import TeachersIcon from "../../assets/icons/contentHeader/teachers.svg";
+
+
 import SideNavBarButton from "../../components/SideNavBarButton";
-import { SideNavBarHeaderContainer, SideNavBarHeaderIcon, SideNavBarHeaderLogo } from '../../components/SideNavBarHeader/style';
+import {
+    SideNavBarHeaderContainer,
+    SideNavBarHeaderIcon,
+    SideNavBarHeaderLogo
+} from '../../components/SideNavBarHeader/style';
+import CardCounter from '../../components/CardCounter';
 import MainLayout from "../../layouts";
 
 interface IDashboardProps {}
@@ -22,15 +33,15 @@ const Dashboard: React.FC<IDashboardProps> = () => {
             text: "Dashboard"
         },
         {
-            icon: StudentsIcon,
+            icon: StudentIcon,
             text: "Students"
         },
         {
-            icon: ParentsIcon,
+            icon: ParentIcon,
             text: "Parents"
         },
         {
-            icon: TeachersIcon,
+            icon: TeacherIcon,
             text: "Teachers"
         },
         {
@@ -44,6 +55,29 @@ const Dashboard: React.FC<IDashboardProps> = () => {
         {
             icon: SettingsIcon,
             text: "Settings"
+        }
+    ]
+
+    const cardCounters = [
+        {
+            icon: StudentsIcon,
+            text: "Students",
+            value: 100
+        },
+        {
+            icon: TeachersIcon,
+            text: "Teachers",
+            value: 1289
+        },
+        {
+            icon: ParentsIcon,
+            text: "Parents",
+            value: 250
+        },
+        {
+            icon: EarningsIcon,
+            text: "Earnings",
+            value: 200.000
         }
     ]
 
@@ -65,9 +99,15 @@ const Dashboard: React.FC<IDashboardProps> = () => {
                 ))
             }
             content={
-                <div>
-                    <h1>Dashboard</h1>
-                </div>
+                <CardCounter icon={StudentsIcon} text="Students" value={2.000}/>
+                // cardCounters.map((cardCounter, index) => (
+                //     <CardCounter
+                //         key={index}
+                //         icon={cardCounter.icon}
+                //         text={cardCounter.text}
+                //         value={cardCounter.value}
+                //     />
+                // ))
             }
         />
     );
