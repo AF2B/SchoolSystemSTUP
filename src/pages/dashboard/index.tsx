@@ -1,16 +1,17 @@
 import React from "react";
 
-import MainLayout from "../../layouts";
-import SideNavBarButton from "../../components/SideNavBarButton";
-import DashboardIcon from "../../assets/icons/av_timer.svg";
-import StudentsIcon from "../../assets/icons/students2.svg";
-import ParentsIcon from "../../assets/icons/parents.svg";
-import TeachersIcon from "../../assets/icons/teachers.svg";
 import AccountIcon from "../../assets/icons/account.svg";
+import DashboardIcon from "../../assets/icons/av_timer.svg";
+import Group from "../../assets/icons/group.svg";
+import Logo from "../../assets/icons/logo.svg";
 import SubjectIcon from "../../assets/icons/openbook.svg";
+import ParentsIcon from "../../assets/icons/parentssidenav.svg";
 import SettingsIcon from "../../assets/icons/settings.svg";
-import Logo from "../../assets/icons/group.svg";
-import { SideNavBarHeaderLogo, SideNavBarHeaderIcon, SideNavBarHeaderContainer } from '../../components/SideNavBarHeader/style';
+import StudentsIcon from "../../assets/icons/students2.svg";
+import TeachersIcon from "../../assets/icons/teachersidenav.svg";
+import SideNavBarButton from "../../components/SideNavBarButton";
+import { SideNavBarHeaderContainer, SideNavBarHeaderIcon, SideNavBarHeaderLogo } from '../../components/SideNavBarHeader/style';
+import MainLayout from "../../layouts";
 
 interface IDashboardProps {}
 
@@ -51,7 +52,7 @@ const Dashboard: React.FC<IDashboardProps> = () => {
             sideNavBarHeader={
                 <SideNavBarHeaderContainer>
                     <SideNavBarHeaderLogo src={Logo} />
-                    <SideNavBarHeaderIcon src={Logo} />
+                    <SideNavBarHeaderIcon src={Group} />
                 </SideNavBarHeaderContainer>
             }
             sideNavBarButton={

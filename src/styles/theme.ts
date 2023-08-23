@@ -7,6 +7,7 @@ export const lightTheme = {
   primary2: '#131F73',
   bg: '#E5E5E5',
   bg2: '#FFFFFF',
+  bg3: '#D60A0B'
 };
 
 export const darkTheme = {
@@ -18,4 +19,5 @@ export const darkTheme = {
   primary2: '#85c1e9',
   bg: '#2c3e50',
   bg2: '#34495e',
+  bg3: '#D60A0B'
 };
