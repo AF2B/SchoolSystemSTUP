@@ -28,11 +28,15 @@ export const CardCounterValue = styled.span`
     color: ${props => props.theme.textInvert3};
 `;
 
-export const CardCounterIconContainer = styled.div`
+interface ICardCounterIconContainerProps {
+    color: string;
+}
+
+export const CardCounterIconContainer = styled.div<ICardCounterIconContainerProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: ${props => props.theme.bg4};
+    background-color: ${props => props.color};
     width: 70px;
     height: 70px;
     border-radius: 50%;

@@ -4,6 +4,7 @@ interface ICardCounterProps {
     icon: string;
     text: string;
     value: number;
+    bgColor: string;
 };
 
 import {
@@ -20,11 +21,12 @@ import {
 const CardCounter: React.FC<ICardCounterProps> = ({
     icon,
     text,
-    value
+    value,
+    bgColor
 }) => {
     return (
-        <CardCounterContainer >
-            <CardCounterIconContainer>
+        <CardCounterContainer>
+            <CardCounterIconContainer color={bgColor}>
                 <CardCounterIcon src={icon} />
             </CardCounterIconContainer>
             <CardCounterPipe />

@@ -99,7 +99,28 @@ const Dashboard: React.FC<IDashboardProps> = () => {
                 ))
             }
             content={
-                <CardCounter icon={StudentsIcon} text="Students" value={2.000}/>
+                <div>
+                    <CardCounter
+                        icon={StudentsIcon}
+                        text="Students"
+                        value={2.000}
+                        bgColor="#D1F3E0"/>
+                    <CardCounter
+                        icon={TeachersIcon}
+                        text="Teachers"
+                        value={150}
+                        bgColor="#E1F1FF"/>
+                    <CardCounter
+                        icon={ParentsIcon}
+                        text="Parents"
+                        value={100}
+                        bgColor="#FFF2D8"/>
+                    <CardCounter
+                        icon={EarningsIcon}
+                        text="Earnings"
+                        value={200.000}
+                        bgColor="#FFEAEA"/>
+                </div>
                 // cardCounters.map((cardCounter, index) => (
                 //     <CardCounter
                 //         key={index}
@@ -107,7 +128,7 @@ const Dashboard: React.FC<IDashboardProps> = () => {
                 //         text={cardCounter.text}
                 //         value={cardCounter.value}
                 //     />
-                // ))
+                // )) TODO: Create a way to render that way
             }
         />
     );

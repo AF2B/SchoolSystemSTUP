@@ -9,7 +9,10 @@ export const lightTheme = {
   bg: '#E5E5E5',
   bg2: '#FFFFFF',
   bg3: '#D60A0B',
-  bg4: '#D1F3E0'
+  bg4: '#D1F3E0',
+  bg5: '#E1F1FF',
+  bg6: '#FFF2D8',
+  bg7: '#FFEAEA'
 };
 
 export const darkTheme = {
@@ -22,5 +25,9 @@ export const darkTheme = {
   primary2: '#85c1e9',
   bg: '#2c3e50',
   bg2: '#34495e',
-  bg3: '#D60A0B'
+  bg3: '#D60A0B',
+  bg4: '#D1F3E0',
+  bg5: '#3F7AFC',
+  bg6: '#FFF2D8',
+  bg7: '#FFEAEA'
 };
