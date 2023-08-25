@@ -2,16 +2,14 @@ import styled from "styled-components";
 
 export const SearchBarContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 40px 0 40px;
-    margin-left: -20px;
     margin-top: -20px;
     margin-bottom: 30px;
-    height: 15dvh;
+    height: 16dvh;
     width: 84dvw;
     background-color: ${props => props.theme.bg2};
-    border: 1px solid black;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -51,7 +49,8 @@ export const SearchBarIconContainer = styled.div`
     align-items: center;
     width: 8dvw;
     height: 5dvh;
-    margin-left: -5.5vh;
+    margin-left: -5.5dvh;
+    margin-right: 320px;
 
     @media screen and (min-width: 768px) {
         width: 8vw;
