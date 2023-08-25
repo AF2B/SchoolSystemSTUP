@@ -10,8 +10,8 @@ export const GridContainer = styled.div<IGridContainerProps>`
     display: grid;
     grid-template-columns: 16% 84%;
     grid-template-rows: 100%;
-    height: 97vh;
-    margin-left: 3.5px;
+    width: 100dvw;
+    height: 100dvh;
 `;
 
 export const SideNavBarContainer = styled.div<ISideNavBarContainerProps>`

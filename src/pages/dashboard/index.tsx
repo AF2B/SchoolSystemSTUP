@@ -2,6 +2,10 @@ import React from "react";
 
 import AccountIcon from "../../assets/icons/account.svg";
 import DashboardIcon from "../../assets/icons/av_timer.svg";
+import EarningsIcon from "../../assets/icons/contentHeader/earnings.svg";
+import ParentsIcon from "../../assets/icons/contentHeader/parents.svg";
+import StudentsIcon from "../../assets/icons/contentHeader/students.svg";
+import TeachersIcon from "../../assets/icons/contentHeader/teachers.svg";
 import Group from "../../assets/icons/group.svg";
 import Logo from "../../assets/icons/logo.svg";
 import SubjectIcon from "../../assets/icons/openbook.svg";
@@ -9,19 +13,12 @@ import ParentIcon from "../../assets/icons/parentssidenav.svg";
 import SettingsIcon from "../../assets/icons/settings.svg";
 import StudentIcon from "../../assets/icons/students2.svg";
 import TeacherIcon from "../../assets/icons/teachersidenav.svg";
-import EarningsIcon from "../../assets/icons/contentHeader/earnings.svg";
-import ParentsIcon from "../../assets/icons/contentHeader/parents.svg";
-import StudentsIcon from "../../assets/icons/contentHeader/students.svg";
-import TeachersIcon from "../../assets/icons/contentHeader/teachers.svg";
-
-
-import SideNavBarButton from "../../components/SideNavBarButton";
-import {
-    SideNavBarHeaderContainer,
-    SideNavBarHeaderIcon,
-    SideNavBarHeaderLogo
-} from '../../components/SideNavBarHeader/style';
 import CardCounter from '../../components/CardCounter';
+import { CardCounterMainContainer } from "../../components/CardCounter/style";
+import CardCounterHeader from "../../components/CardCounterHeader";
+import SearchBar from "../../components/SearchBar";
+import SideNavBarButton from "../../components/SideNavBarButton";
+import { SideNavBarHeaderContainer, SideNavBarHeaderIcon, SideNavBarHeaderLogo } from '../../components/SideNavBarHeader/style';
 import MainLayout from "../../layouts";
 
 interface IDashboardProps {}
@@ -100,6 +97,9 @@ const Dashboard: React.FC<IDashboardProps> = () => {
             }
             content={
                 <div>
+                <SearchBar />
+                <CardCounterHeader title={"Admin Dashboard"}/>
+                <CardCounterMainContainer>
                     <CardCounter
                         icon={StudentsIcon}
                         text="Students"
@@ -120,6 +120,7 @@ const Dashboard: React.FC<IDashboardProps> = () => {
                         text="Earnings"
                         value={200.000}
                         bgColor="#FFEAEA"/>
+                </CardCounterMainContainer>
                 </div>
                 // cardCounters.map((cardCounter, index) => (
                 //     <CardCounter

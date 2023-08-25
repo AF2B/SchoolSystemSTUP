@@ -5,7 +5,7 @@ export const CardCounterContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 270px;
+    width: 300px;
     height: 120px;
     border-radius: 5px;
     background-color: ${props => props.theme.bg2};
@@ -70,4 +70,12 @@ export const CardCounterValueContainer = styled.div`
     width: 100%;
     align-items: end;
     flex-direction: row;
+`;
+
+export const CardCounterMainContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 90em;
 `;
