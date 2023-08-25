@@ -49,7 +49,6 @@ export const SearchBarIconContainer = styled.div`
     align-items: center;
     width: 8dvw;
     height: 5dvh;
-    margin-left: -5.5dvh;
     margin-right: 320px;
 
     @media screen and (min-width: 768px) {
@@ -72,6 +71,9 @@ interface ISearchBarProfileProps {
 }
 
 export const SearchBarProfile = styled.img<ISearchBarProfileProps>`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     &:hover {
         cursor: pointer;
     }
