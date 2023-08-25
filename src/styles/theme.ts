@@ -1,6 +1,7 @@
 export const lightTheme = {
   text: '#FFFFFF',
   text2: '#000000',
+  text3: '#494949',
   textInvert: '#A3A3A3',
   textInvert2: '#14238A',
   textInvert3: '#000',
@@ -18,6 +19,7 @@ export const lightTheme = {
 export const darkTheme = {
   text: '#fff',
   text2: '#f0f0f0',
+  text3: '#494949',
   textInvert: '#333',
   textInvert2: '#555',
   textInvert3: '#000',
