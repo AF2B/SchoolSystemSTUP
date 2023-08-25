@@ -8,6 +8,12 @@ export const CardCounterHeaderContainer = styled.div`
     width: 100dvw;
     height: 15dvh;
     margin-left: 50px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        padding: 10px;
+        align-items: center;
+    }
 `;
 
 export const CardCounterHeaderTitle = styled.h4`
@@ -17,6 +23,10 @@ export const CardCounterHeaderTitle = styled.h4`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `;
 
 export const CardCounterHeaderLine = styled.span`
@@ -27,6 +37,13 @@ export const CardCounterHeaderLine = styled.span`
     background-color: ${props => props.theme.bg3};
     content: "";
     transform: rotate(90deg);
+
+    @media screen and (max-width: 768px) {
+        margin: 10px 0;
+        transform: none;
+        width: 40px;
+        height: 3px;
+    }
 `;
 
 export const CardCounterHeaderMinimalTitle = styled.span`
@@ -36,4 +53,8 @@ export const CardCounterHeaderMinimalTitle = styled.span`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `;

@@ -29,7 +29,8 @@ export const SideNavBarButtonStyled = styled.button`
     }
 
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 100dvw;
+        margin-left: -700px;
     }
 `;
 

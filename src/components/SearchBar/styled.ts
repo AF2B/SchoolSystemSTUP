@@ -12,6 +12,14 @@ export const SearchBarContainer = styled.div`
     width: 84dvw;
     background-color: ${props => props.theme.bg2};
     border: 1px solid black;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100dvw;
+        height: 15vh;
+        margin-left: -20px;
+    }
 `;
 
 export const SearchBarInputContainer = styled.div`
@@ -19,6 +27,10 @@ export const SearchBarInputContainer = styled.div`
     align-items: center;
     border-radius: 10px;
     width: 25dvw;
+
+    @media screen and (min-width: 768px) {
+        width: 25vw;
+    }
 `;
 
 export const SearchBarInput = styled.input`
@@ -40,6 +52,10 @@ export const SearchBarIconContainer = styled.div`
     width: 8dvw;
     height: 5dvh;
     margin-left: -5.5vh;
+
+    @media screen and (min-width: 768px) {
+        width: 8vw;
+    }
 `;
 
 interface ISearchBarIconProps {
@@ -68,4 +84,12 @@ export const CardCounterPipe = styled.span`
     height: 40px;
     background-color: ${props => props.theme.bg3};
     content: "";
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        width: 1px;
+        height: 40px;
+        background-color: ${props => props.theme.bg3};
+        content: "";
+    }
 `;

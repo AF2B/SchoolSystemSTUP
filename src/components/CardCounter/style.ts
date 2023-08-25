@@ -9,6 +9,14 @@ export const CardCounterContainer = styled.div`
     height: 120px;
     border-radius: 5px;
     background-color: ${props => props.theme.bg2};
+
+    @media screen and (max-width: 768px) {
+        width: 100dvw;
+        height: 20dvh;
+        margin-left: -700px;
+        flex-direction: column;
+        padding: 15px;
+    }
 `;
 
 export const CardCounterTitle = styled.span`
@@ -41,6 +49,11 @@ export const CardCounterIconContainer = styled.div<ICardCounterIconContainerProp
     height: 70px;
     border-radius: 50%;
     margin-left: 30px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 `;
 
 export const CardCounterPipe = styled.span`
@@ -62,6 +75,12 @@ export const CardCounterTitleValueContainer = styled.div`
     justify-content: space-between;
     align-items: flex-start;
     margin-right: 3rem;
+
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        margin-right: 0;
+        text-align: center;
+    }
 `;
 
 export const CardCounterValueContainer = styled.div`
@@ -78,4 +97,9 @@ export const CardCounterMainContainer = styled.div`
     align-items: center;
     flex-direction: row;
     width: 90em;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
