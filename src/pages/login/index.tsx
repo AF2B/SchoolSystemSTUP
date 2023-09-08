@@ -40,7 +40,7 @@ const Login: React.FC = () => {
         window.location.href = 'google.com.br'; // Página de redirecionamento após o login bem-sucedido
       } else {
         setErrorMessage('Invalid username or password');
-        resetFields(); // Chama a função para limpar os campos
+        resetFields(); //função para limpar os campos
       }
     } catch (error) {
       console.error('Error:', error);
